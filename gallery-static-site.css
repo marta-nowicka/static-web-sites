@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    width:100%;
+    height: auto;
+    margin:0px;
+    padding:0px;
+    display: grid;
+}
+.relative{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.absolute{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 3%;
+    left: 3%;
+}
+.absolute1{
+    position: absolute;
+    width: 4%;
+    height: auto;
+    top: 1%;
+    right: 1%;
+}
+.menu {
+    width: 20%;
+    float: left;
+    padding: 15px;
+    overflow:auto;
+    margin: auto;
+}
+.image {
+    width: 26.6666%;
+    float: left;
+    padding: 5px;
+    overflow:auto;
+}
+body {
+    background-image: url(sand.jpg);
+    background-position: left top;
+    background-repeat: no repeat;
+    background-size: 100%;
+    display: grid;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    height: 80%;
+    margin: 0;
+    background-color:transparent;
+}
+li a {
+    display: block;
+    padding:15px;
+}
+img{
+    border: 0px;
+}
+.container img {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+.polaroid {
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 20px 20px;
+    margin: auto;
+    font-family: Caveat;
+    font-size: 40px;
+}
+li a.active {
+
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: transparente;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 50px 60px 0 rgba(0, 0, 0, 0.19);
+    color: gray;
+}
+.polaroid:hover{
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 50px 60px 0 rgba(0, 0, 0, 0.19);
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    float:bottom;
+}
+@media only screen and (max-width: 1024px) {
+    .image, .polaroid {
+        width: 100%;
+        text-align: center;
+        padding:8px;
+        font-size: 30px;
+    }
+    .menu{
+        width: 50%;
+        margin: auto;
+        float: none;
+    }
+    .absolute{
+        top: 1% ;
+        left: 3% ;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .menu {
+        width: 70%;
+    }
+}
